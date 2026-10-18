@@ -1,0 +1,9 @@
+{"command_id":"a","kind":"event","partition":"east","event_id":"e1","event_ms":100,"tool":"search","duration_ms":40,"failed":false}
+{"command_id":"b","kind":"event","partition":"west","event_id":"e2","event_ms":700,"tool":"search","duration_ms":60,"failed":true}
+{"command_id":"c","kind":"watermark","partition":"east","watermark_ms":1000}
+{"command_id":"d","kind":"activity","partition":"west","idle":true}
+{"command_id":"e","kind":"event","partition":"west","event_id":"e3","event_ms":400,"tool":"search","duration_ms":20,"failed":false}
+{"command_id":"f","kind":"watermark","partition":"east","watermark_ms":1500}
+{"command_id":"g","kind":"watermark","partition":"west","watermark_ms":1500}
+{"command_id":"h","kind":"event","partition":"west","event_id":"e4","event_ms":800,"tool":"search","duration_ms":90,"failed":true}
+{"command_id":"retry-e3","kind":"event","partition":"west","event_id":"e3","event_ms":400,"tool":"search","duration_ms":20,"failed":false}

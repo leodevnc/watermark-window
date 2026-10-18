@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "watermark-window"
+version = "0.1.0"
+description = "Event-time windows with late corrections and durable local replay"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+watermark-window = "watermark_window.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["watermark_window*"]
